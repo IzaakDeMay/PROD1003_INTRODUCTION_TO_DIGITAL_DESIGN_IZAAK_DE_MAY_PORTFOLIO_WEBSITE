@@ -1,0 +1,78 @@
+<!-- In this section of the code below, I have selected the code to be in html format 
+(line 1) and the language to be set in English (line 2). Below that I have set the
+overall website to be compatible with smaller device screens such as tablets and
+mobile phones. This is done by telling VS Code to keep the integrity of the website
+through keeping to the border of the device it's being displayed on. 
+(shown in lines 10 through 12) -->
+
+<!DOCTYPE html>
+<html lang="eng">
+    <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE-edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="ALL CSS CODE.css">
+
+<!-- Below you can see the html code of the header of my website. For the header of the 
+website I have chosen to go with a hero image which is a large image with text which is 
+usually at the top of the webpage. i've also added a button which is linked  The code below tells VS Code that the image and text 
+I am using is apart of this technique and as well as that I've also added the code to a 
+CSS link so that the hero image can be styled appropriately.-->
+
+<head>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Izaak De May</h1>
+            <h2>Photographer and Videographer</h2>
+            <p>Scroll down to find out more!</p>
+    </div>
+</div>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="Main Website.html">Home</a> 
+        <a href="Portfolio.html">Portfolio</a>
+    </div> 
+    <style>
+        h3{text-align: center;} 
+        p{text-align: center;}
+        h4{text-align: center; margin-bottom: -50px; margin-top: 50px;}
+     </style>
+     <!-- Below is the code for the about me section of the home page. This includes a title and the 
+    link to the portrait photo of myself with the avatar styling. As well as this it has a paragraph 
+    section which has a description of who I am and what I do.-->
+     <h3>Who am I and what do I do?</h3>
+     <img src="Izaak Portrait Photo.jpg" alt="Avatar" class="avatar"> 
+     <p>Hello there! My name is Izaak De May and I'm a Media Production student at 
+        De Montfort University. Outside from the studies whether it be playing video games,
+        watching sports (i'm a massive fan of Rugby Union) or playing board games with friends,
+        I'm always doen for a fun time! If i'm not pre occupied with studies or with my hobbies 
+        I fill the time throguh producing Videography and Photography content for various 
+        different genres, themes and desires. Whether it be a short film or documentary to nature 
+        and portrait photography I'm always striving to produce new, exiting and of an execptional 
+        tier work for either a project or a client I can offer a helping hand in whatever video or 
+        photography work that you need!</p>
+    <!-- Below is the code for the link to my relavent social media pages. This involves images of the
+    logos of the relavent social media websites through the image code which includes the sizing and margin
+    of the image. There is also a href code which includes the specific website link to the diffrerent social 
+    media pages.-->
+    <h4>Follow Me on Social Media!</h4>
+    <a href="https://www.facebook.com/izaaktheradiopresenter">
+        <img src="FACEBOOK LOGO.png" alt="Facebook Logo" style="width: 165px; height: 120px; margin-left: 400px;">
+    </a>
+    <a href="https://twitter.com/IzaakRadio2021">
+        <img src="TWITTER LOGO.png" alt="Twitter Logo" style="width: 300px; height: 250px; margin-bottom: -65px; margin-left: -85px;">
+    </a>
+    <a href="https://www.instagram.com/izaaktheradiopresenter/">
+        <img src="INSTAGRAM LOGO.png" alt="Instagram Logo" style="width: 300px; height: 250px; margin-bottom: -80px; margin-left: -155px;">
+    </a>
+</body>
+<!-- Below is the code to change the background color of the entire website. This is done through 
+establishing a style section and then adding the relevant rgb color of cream to the background color 
+of the body element of the website.-->
+<style>
+    body {
+       background-color: rgb(255, 253, 208); 
+    }
+</style>
+
+</html>
