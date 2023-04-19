@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE-edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="ALL CSS CODE.css"> 
+   <head>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Portfolio Page</h1>
+            <h2>Izaak De May</h2>
+            <p>Scroll down to view my work!</p>
+    </div>
+</div>
+<div class="topnav">
+  <a class="active" href="Main Website.html">Home</a> 
+  <a href="Portfolio.html">Portfolio</a>
+</div>
+<!-- Below is a styling element which tells what the background colour which includes the rgb color for cream 
+and also the appropriate text alignment of the title which is to be centre. -->
+<style>
+  body {
+     background-color: rgb(255, 253, 208); 
+  }
+  h1{text-align: center;} 
+</style>
+</head>
+ 
+
+<!-- In the below code is the HTML for the a portfolio gallery to showcase the work 
+I wish to place in my portfolio website. The way in which this done is through placing the different images
+within their own div classes where the image will sit along with the title and descripion of the image. When 
+it comes to the styling the portfolio gallery there is a seperate css code which styles it to look more appealing. -->
+<body>
+  <!-- Within this first div element is for the filtering buttons at the top of the portfolio page. This is done 
+  by creating a button class and then creating the filter selection option for each button. This will enable the 
+  button to display certain elements.-->
+  <h2>Photography and Film Work</h2>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">All Work</button>
+      <button class="btn" onclick="filterSelection('Photography card')">Photography</button>
+      <button class="btn" onclick="filterSelection('Film card')">Film</button>
+    </div>
+    <!-- The below div classes are for the each induvidiual photography/video cards that are displayed.
+    theres is 2 seperate div codes for each card, one that groups it with either photography or video 
+    so that the filtering element can work effectively, and another general div class to group it in as 
+    content. As well as this theres also an image element in there so that the image can be displayed and 
+    at the appropriate style.-->
+    <div class="column">
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography1.jpg" alt="Wooden Plank" style="width: 100%">
+          <h4>Wooden Plank</h4>
+          <p>The above image was taken whilst on a walk in the east of Suffolk
+            here in the UK. East Suffolk is known for its wildlife areas and This
+            was taken on a nature walk in the area.</p>
+        </div>
+      </div>
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography2.jpg" alt="Evening Sky" style="width: 100%">
+          <h4>Evening Sky</h4>
+          <p>This particular image was taken whilst on an evening walk by the seaside.
+            When looking around the beautiful scenery I discovered the full beauty of
+            the sky. </p>
+        </div>
+      </div>
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography3.jpg" alt="Lone Pinecone" style="width: 100%">
+          <h4>Lone Pinecone</h4>
+          <p>This particular image was taken whilst on another nature walk in the east
+            of Suffolk. Whilst in the woodlands, I noticed this lone pinecone which had
+            perfectly fallen into that position which gave me the opportunity to take that
+            photograph. </p>
+        </div>
+      </div>
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography4.jpg" alt="Scar in the Wall" style="width: 100%">
+          <h4>Scar in the Wall</h4>
+          <p>This particular image was taken whilst out in a small town in Suffolk called Woodbridge
+            where whilst exploring the area I discovered this abandoned house which has this peculiar
+            mark in the wall. Fascinated by what I was seeing I thought why not capture the moment and see what
+            I could do it creatively in Photoshop. </p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography5.jpg" alt="The Forgotten Glove" style="width: 100%">
+          <h4>The Forgotten Glove</h4>
+          <p>This particular image was taken exploring the woodlands of East Suffolk where whilst walking through
+            the nature walks, this gate had an old forgotten glove which someone had dropped. Seeing this glove gave
+            I was inspired to photograph it to tell the story of the abandoned glove. </p>
+        </div>
+      </div>
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography6.jpg" alt="The Trees Protection" style="width: 100%">
+          <h4>The Trees Protection</h4>
+          <p>TThis particular image was taken around the old village/estate I used live in and in the time leading up
+            to this image I was experimenting with different angles on tree barks and that's when this image was photographed. </p>
+        </div>
+      </div>
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography7.jpg" alt="Sugar Pot" style="width: 100%">
+          <h4>Sugar Pot</h4>
+          <p>When exploring the streets of Woodbridge, there was a particular cafe which had some outdoor seating. After passing one of the tables
+            I had noticed these fancy looking sugar pots that they had on offer for the customers. After playing around with the settings and angles,
+            This image then became the result. </p>
+        </div>
+      </div>
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography8.jpg" alt="Aging Nail" style="width: 100%">
+          <h4>Aging Nail</h4>
+          <p>Whilst exploring a historic windmill in the East of Suffol I was observing the walls and structure of the windmill. This is when I had
+            discovered this rusty old nail which looked like the perfect thing to photograph. With an black and white effect placed on the image this
+            is what had resulted. </p>
+        </div>
+      </div>
+    </div>
+    <div class="column ">
+      <div class="Photography card">
+        <div class="content">
+          <img src="Photography9.jpg" alt="Time" style="width: 100%">
+          <h4>Time</h4>
+          <p>The above image was taken whilst during lockdown where I was experimenting with the spring sky view
+            in my own back garden. Whilst experimenting with different angles this is one of the results of that
+          experimentation. </p>
+        </div>
+      </div>
+
+      <div class="Film card">
+        <div class="content">
+          <a href="Film 1.html">
+          <img src="The Ring thumbnail.webp" alt="Ring" style="width: 100%">
+          </a>
+          <h4>(VIDEO) The Ring</h4>
+          <p>Directed and written by Izaak De May this short film follows two mates, played by Laurie Willey
+            and Lewis Goulden, go on a hunt after recieving an mysterious text from an annoymus source. The 
+            question now is what lies for them at this mysterious location? Click the image to see the video! </p>
+        </div>
+      </div>
+      <div class="Film card">
+        <div class="content">
+          <a href="Film 2.html">
+          <img src="Film thumnail 2.webp" alt="Coronavirus" style="width: 100%">
+          </a>
+          <h4> (VIDEO) Coronavirus: The Virus That Shaped The UK</h4>
+          <p> March of 2020 saw the beginning of one of the most deadliest viruses of the 
+            21st centuary, Coronavirus or Covid-19 for short. What we didn't know that this 
+            virus would impact our lives for the following 3 years after that. This video reflects
+            on that trying time. Click the image to see the video!
+          </p>
+        </div>
+      </div>
+      <div class="Film card">
+        <div class="content">
+          <a href="Film3.html">
+          <img src="film 3 thumbnail.webp" alt="Deforestation" style="width: 100%">
+          </a>
+          <h4> (VIDEO) Deforestation: Mankind's Worst Kind Of Destruction</h4>
+          <p> In a world where we are dependant on trees, do we know what harm we do to our plannet?
+            With millions of trees being cut down each year is this method of getting resources 
+            sustainable? Click the image to see the video!</p>
+        </div>
+      </div>
+      <div class="Film card">
+        <div class="content">
+          <a href="Film4.html">
+          <img src="Film4 thumbnail.jpeg" alt="Sacrifice" style="width: 100%">
+          </a>
+          <h4> (VIDEO) Sacrifice: How The British People Came Together</h4>
+          <p> As the pandemic raged on this video reflects on the time near the end of the first lockdown
+            where the hope of a normal life again was on the horizon. Click the image to see the video! </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Below is the JavaScript code that goes alongside where you can view the portfolio work. This code makes
+    sure that the filtering element works properly. 
+    
+    The first section of the JavaScript (the section with Filter Selectio (All) at the beginning) makes sure that 
+    the filtering element works and displays all the content within the div elements above, regardless of class. 
+    The show element within the w3RemoveClass element makes sure that other elements are hidden when not selected.
+  
+    The next section of the JavaScript (the section that begins with function w3AddClass(element, name) at the beginning)
+    is the code to help display the filtered elements once selected. This mean that once a specific button is pressed, this 
+    section of JavaScript makes sure that only that filtered element is shown. 
+  
+    Below that in the next section (the second function w3RemoveClass <element, name) will make sure that once the specific 
+    element (for example if photography is selected) is selected, that all the other non selected elements are hidden.
+  
+    The final section at the bottom of the JavaScript code is for the buttons in the portfolio which filters the content. This 
+  JavaScript code activates the class makes sure it does its correct function. -->
+  <script>
+filterSelection("all") 
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("card");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE-edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="ALL CSS CODE.css">
+   <!-- Below is the styling for the full page spread of the first video that is 
+    included in my portfolio. 
+  
+    The first section of styling (titled 'body') is for the body of the video where the text is and this styles
+    the style of font, size and the margin of the main body of text.
+    
+    The next section of code (titled '#myVideo') is for the styling of the video. By using the width and height 
+    element made sure the video fit the entire page and the position, right and bottom elements made sure that it 
+    stayed in the middle of the page and cnetered. 
+  
+    In the section after that (titled 'content') is for the text that you see at the bottom of the page. This piece 
+    of code styles the content that is at the bottom of the video to look the way it looks through the 
+    positioning, background colour, and width and padding of the background colour.
+
+    In the final 2 sections of code (titled '#myBtn' and '#mybtn:hover' are for the pause/play button at the bottom of
+    the page. The '#myBtn' element deals with the styling of the button, like te width, height, font-size, padding etc. 
+    and the '#myBtn:hover' element deqals with the colour change when the button is activated. -->
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+    
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+    }
+    
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+    </style>
+    </head>
+    <body>
+    <!-- within this body is the code for the video itself and the text that goes into the bottom of the video.
+    The video element sources the video and makes sure its within the website at the correct format and below that]
+    in the div class is the title of the video and the description of the video. As well as that there is a button container
+    with the pause/play button involved as well.-->
+    <video autoplay loop id="myVideo">
+      <source src="(SHORT) Sacrafice_How_The_British_People_Came_Togethermp4.mp4" type=video/mp4>
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="content">
+      <h3> Sacrifice: How The British People Came Together</h3>
+      <p> As the pandemic raged on this video reflects on the time near the end of the first lockdown 
+        where the hope of a normal life again was on the horizon. Click the image to see the video! </p>
+      <button id="myBtn" onclick="myFunction()">Play</button>
+    </div>
+    <!-- In the below code is the JavaScript for the pause/play button involved in the video. In the vr video line of code is 
+    the code of retrieving the video and the var btn line of code is there to retrieve the button within this page. Below the the 
+    rest of the code is for the pause/play function specifially as this is what changed the text on the button from pause to play 
+    and then back again when needed.  -->
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+</script>
+</body>
+
+</html>
